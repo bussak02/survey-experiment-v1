@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Landing Page</title>
+
+  <script>
+    /*
+      STEP 1: Replace the placeholder URLs below with your
+      Google Form links (one per experimental condition).
+    */
+
+    const forms = [
+      "https://forms.gle/pE7mKYjRsDtPhd43A",
+      "https://forms.gle/wGg4yPoL58E5cPKeA",
+      "https://forms.gle/a8xdknWJXBJbAEwt5",
+      "https://forms.gle/QWpd5Uk2kuZcUCGcA"
+    ];
+
+    /*
+      STEP 2: Randomly assign the participant to one form
+      and immediately redirect them.
+    */
+
+    const randomIndex = Math.floor(Math.random() * forms.length);
+    window.location.href = forms[randomIndex];
+  </script>
+</head>
+
+<body>
+  <p>Redirecting you to the survey…</p>
+</body>
+</html>
